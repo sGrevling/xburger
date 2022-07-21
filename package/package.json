@@ -1,8 +1,12 @@
 {
   "name": "xburger",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "HamburgerMenu with button",
   "main": "index.jsx",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sGrevling/xburger"
+  },
   "keywords": [
     "react",
     "hamburger-menu",

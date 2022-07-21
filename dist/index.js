@@ -64,7 +64,7 @@ const Menu = _ref2 => {
   const tt = transitionTime !== null && transitionTime !== void 0 ? transitionTime : 400,
         zi = zIndexLow !== null && zIndexLow !== void 0 ? zIndexLow : 2,
         c = color !== null && color !== void 0 ? color : 'white',
-        bgc = bgColor !== null && bgColor !== void 0 ? bgColor : 'rebeccapurple',
+        bgc = bgColor !== null && bgColor !== void 0 ? bgColor : 'hotpink',
         bdc = backdropColor !== null && backdropColor !== void 0 ? backdropColor : '#e3e6e850';
   return /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
     className: "xburgerTouchOutsideSensor ".concat(show ? ' show' : ''),
