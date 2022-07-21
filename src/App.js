@@ -1,22 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import Menu from "./lib";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+
+        <Menu
+            shouldCloseOnClick={(e) =>
+                ['button'].includes(e.target.tagName.toLowerCase())
+            }
         >
-          Learn React
-        </a>
+          {['one', 'two', 'three', 'five'].map(x => (
+              <button
+                  key={x}
+                  onClick={() => {
+                    console.log(x);
+                  }}
+              >
+                {x}
+              </button>
+          ))}
+        </Menu>
       </header>
     </div>
   );

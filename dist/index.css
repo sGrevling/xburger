@@ -1,0 +1,54 @@
+.xburgerMenuButton {
+    font-size: 1.3em;
+    padding: 0;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    border-radius: .5rem;
+}
+
+.xburgerMenu {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: calc(100vw + 20px);
+    right: calc(-80vw - 20px);
+    bottom: 0;
+}
+
+.xburgerTouchOutsideSensor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #e3e6e850;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.xburgerTouchOutsideSensor.show {
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.xburgerMenu.show {
+    left: 20vw;
+    right: 0;
+}
+
+.xburgerMenu a * {
+    pointer-events: none; /* allow menu item click detection to close menu*/
+}

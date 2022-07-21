@@ -1,0 +1,16 @@
+{
+  "name": "xburger",
+  "version": "1.0.10",
+  "description": "HamburgerMenu with button",
+  "main": "index.jsx",
+  "keywords": [
+    "react",
+    "hamburger-menu",
+    "menu",
+    "drawer",
+    "mobile"
+  ],
+  "files": [ "index.js", "index.css", "README.md" ],
+  "author": "Sigve Grevling",
+  "license": "MIT"
+}
